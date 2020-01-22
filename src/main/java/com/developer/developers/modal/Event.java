@@ -1,7 +1,9 @@
 package com.developer.developers.modal;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -20,7 +22,6 @@ public class Event {
     @Id
     @GeneratedValue
     private Long id;
-
     private String title;
     private Instant date;
     private String description;

@@ -42,7 +42,7 @@ public class GroupController {
     ResponseEntity<Group> createGroup(@Valid @RequestBody Group group) throws URISyntaxException {
         logger.info("Request to update group: {}", group);
         Group result = repository.save(group);
-        return ResponseEntity.created(new URI("/api/group/" + result.getId())).body(result);
+        return ResponseEntity.created(new URI("/api/group/" +result.getId())).body(result);
     }
 
     @PutMapping("/group/{id}")

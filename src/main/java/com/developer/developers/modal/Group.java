@@ -26,4 +26,6 @@ public class Group {
     private User user;
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Set<Event> events;
+
+
 }
