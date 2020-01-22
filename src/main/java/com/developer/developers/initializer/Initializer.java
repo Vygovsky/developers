@@ -29,7 +29,7 @@ public class Initializer implements CommandLineRunner {
         Event e = Event.builder().title("Full Stack Reactive")
                 .description("Reactive with Spring Boot + React")
                 .date(Instant.parse("2018-12-12T18:00:00.000Z"))
-                .buid();
+                .build();
         group.setEvents(Collections.singleton(e));
         repository.save(group);
 
