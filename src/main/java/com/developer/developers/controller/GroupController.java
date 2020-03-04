@@ -2,6 +2,7 @@ package com.developer.developers.controller;
 
 import com.developer.developers.modal.Group;
 import com.developer.developers.repos.GroupRepository;
+import org.springframework.data.jpa.repository.query.Procedure;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,6 +17,7 @@ import java.util.Optional;
 
 
 @RestController
+@CrossOrigin(origins = {"http://localhost:3000", "http://172.16.2.8:3000"})
 @RequestMapping("/api")
 public class GroupController {
 
